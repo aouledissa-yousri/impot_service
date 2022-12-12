@@ -1,13 +1,10 @@
 import express from "express"
-import { roomControllerRoutes } from "./controllers/RoomController/RoomControllerRoutes"
-import { userControllerRoutes } from "./controllers/UserController/UserControllerRoutes"
+import { impotControllerRoutes } from "./controllers/ImpotController/ImpotControllerRoutes"
 
 let routes = express.Router()
 
 //put your routes here
 
-routes.use("/room", roomControllerRoutes)
-routes.use("/user", userControllerRoutes)
-
+routes.use("/impot", impotControllerRoutes)
 
 export { routes }
